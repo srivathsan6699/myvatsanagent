@@ -10,7 +10,8 @@ from dotenv import load_dotenv
 from telegram import Update
 from telegram.ext import ApplicationBuilder, ContextTypes, MessageHandler, filters
 
-# Load environment variables
+print("TELEGRAM_TOKEN VALUE:", os.getenv("TELEGRAM_TOKEN"))
+
 load_dotenv()
 DATABASE_URL = os.getenv("DATABASE_URL")
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
